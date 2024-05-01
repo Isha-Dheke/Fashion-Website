@@ -1,0 +1,604 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+header{
+    background-color: #C2EFD4;
+    padding-bottom: 60px;
+}
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bar-icon{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.fashion_icon img{
+    height: 60px;
+    width: 60px;
+    margin: 15px 0px 0px 30px;
+}
+.mid_nav{
+    margin: 12px 60px;
+}
+.mid-navbar a{
+    text-decoration: none;
+    color: #224F34;
+   padding: 12px;
+   text-align: center;
+   font-weight: 600;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.mid-navbar ul{
+    display: flex;
+}
+.mid-navbar li{
+    list-style: none;
+}
+.mid-navbar li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.right-navbar{
+    display: flex;
+}
+.right-navbar .fa-solid {
+    margin:20px 10px 0px 0px;
+}
+.login-navbar{
+    margin:12px 22px ;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid black 2px;
+    padding: 6px 16px;
+    border-radius: 3px;
+    color: #224F34;
+}
+.login-navbar:hover{
+    background-color:#224F34 ;
+}
+.login-navbar a{
+    text-decoration: none;
+}
+.login-navbar a:hover{
+    color: white;
+}
+
+.header-body {
+    display: flex;
+}
+.header-body h2{
+    width: 60%;
+    font-family: "Rufina", serif;
+    font-size: 86px;
+    margin: 30px 160px;
+    color: #224F34;
+    margin-left: 180px;
+}
+.header-body h3{
+    width: 60%;
+    font-family: "Rufina", serif;
+    font-size: 22px;
+    margin: 30px 160px;
+    color: #224F34;
+    font-weight: lighter;
+    margin-left: 180px;
+}
+.header-body a{
+    text-decoration: none;
+    font-family: "Rufina", serif;
+    font-size: 18px;
+    margin-left: 150px;
+    color: #224F34;
+    color: white;
+    border: 2px solid none;
+    width: 168px;
+    padding: 10px 15px;
+    background-color:#224F34 ;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+a.explore-now:hover{
+    background-color: rgb(62, 131, 62);
+}
+.header-body img{
+    margin-top: 40px;
+    height: 24%;
+    width: 24%;
+    border: 2px solid white;
+    border-top-right-radius:30px ;
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 110px;
+    padding: 32px 32px;
+    margin-right: 176px;
+    background-color: #4BAF73;
+}
+.best-selling{
+    text-align: center;
+    margin-top: 60px;
+}
+.best-selling h2{
+    font-size: 48px;
+    font-family: "Roboto Slab", serif;
+    color: #224F34;
+}
+.best-selling h3{
+    line-height: 40px;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    color: #224F34;
+}
+.boxes{
+    display: flex;
+    margin-top: 32px;
+}
+.box-1 img{
+    height: 52%;
+    border: 2px solid white;
+    margin-left: 78px;
+    padding-top: 30px;
+    background-color: #F3DBBF;
+    border-radius: 6px;
+}
+.box-2 img{
+    height: 52%;
+    border: 2px solid white;
+    padding-top: 30px;
+    background-color: #B9EBF6;
+    margin: auto;
+    border-radius: 6px;
+}
+.box-3 img{
+    height: 52%;
+    border: 2px solid white;
+    padding-top: 30px;
+    background-color: #F6C9CC;
+    border-radius: 6px;
+}
+.details{
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+}
+.box-1 h4{
+    margin-left: 76px;
+}
+.details-first{
+    display: flex;
+    margin-left: 280px;
+    gap: 10px;
+}
+.details-second{
+    display: flex;
+    margin-left: 140px;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+.details-third{
+    display: flex;
+    margin-left: 210px;
+    gap: 10px;
+}
+.btn{
+    font-family: "Roboto Slab", serif;
+    font-size: 22px;
+    color: #224F34;
+    border: 2px solid rgb(250, 246, 246);
+    width: 168px;
+    padding: 10px 15px;
+    background-color:#F4EAEA ;
+    cursor: pointer;
+    box-shadow: 0.1px 0.1px 0px 0px black, 0.2px 0.2px 0px 0px black;
+}
+a.btn{
+    text-decoration: none;
+}
+.categories{
+    text-align: center;
+    margin-top: 60px;
+}
+.categories h2{
+    font-size: 48px;
+    font-family: "Roboto Slab", serif;
+    color: #224F34;
+}
+.list{
+    margin-top: 20px;
+}
+.list a{
+    text-decoration: none;
+    padding: 0px 40px 0px 40px;
+    font-family: "Roboto Slab", serif;
+    color: black;
+   
+}
+.categories .ref{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.flex-container{
+    margin-left: 210px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.flex-item img{
+    border: 2px solid white;
+    height: 280px;
+    width: 280px;
+    background-color: #F3E1F3;
+}
+.best-detailed{
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto Slab", serif;
+    margin: 6px 0px;
+}
+.best-details{
+    font-family: "Roboto Slab", serif;
+    margin-top: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.flex-item img{
+    border: 2px solid white;
+    height: 280px;
+    width: 280px;
+    background-color: #D9D9D9;
+}
+.offers{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 210px;
+    width: 69%;
+    padding: 40px;
+    background-color:#C2EFD4 ;
+}
+.offer-detail{
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-top: -14px;
+    margin-left: 82px;
+}
+.offer-detail h2{
+    margin-bottom: 28px;
+}
+.offer-detail p{
+    width: 300px;
+    font-size: 20px;
+    margin-right: 80px;
+    font-weight: bold;
+}
+.offers .girl{
+    margin-left: -80px;
+    height: 490px;
+    width: 490px;
+    margin-top: 80px;
+}
+.offers .dot{
+    height: 90px;
+    width: 90px;
+    margin-top: 500px;
+}
+.offers .dot-top{
+    height: 90px;
+    width: 90px;
+    margin-left: -80px;
+}
+.number-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.number{
+    border: 2px solid white;
+    width: 60px;
+    padding: 10px;
+    background-color: #FBF7F7;
+    margin-top: 40px;
+    box-shadow: 8px 8px 0px 0px black, 0.2px 0.2px 0px 0px black;
+    
+}
+.number .num{
+    font-size: 36px;
+    display: inline;
+    margin-left: 10px;
+}
+.number .num-content{
+    font-size: 10px;
+    margin-left: 16px;
+}
+.shop a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.shop{
+    margin-top: 60px;
+    border: 1px solid white;
+    width: 140px;
+    padding: 15px;
+    text-align: center;
+    background-color: #224F34;
+    cursor: pointer;
+}
+.shop:hover{
+ background-color: rgb(62, 131, 62);
+}
+.feedback-corner{
+    text-align: center;
+    margin-top: 60px;
+}
+.feedback-corner h2{
+    font-size: 48px;
+    font-family: "Roboto Slab", serif;
+    color: #224F34;
+}
+.all-box{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 20px;
+  
+}
+.box {
+    margin-left: 30px;
+    width: 320px;
+    height: 230px;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px; 
+    background-color: #F8EEEE;
+    box-shadow: 4px 4px 0px 0px rgb(149, 148, 148), 2px 2px 0px 0px rgb(137, 135, 135);
+  }
+  .box h4{
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+  }
+  .box p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+  }
+  .double-inverted{
+    text-align: left;
+  }
+  footer{
+    background-color:#C2EFD4 ;
+  }
+.footer-container{
+    display: flex;
+   
+    margin-top: 120px;
+    padding: 60px;
+}
+.footer-content{
+    margin-left: 152px;
+    
+}
+.footer-content h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif;
+  
+}
+.content-in a{
+    text-decoration: none;
+    color: #224F34;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.content-in ul{
+    text-decoration: none;
+    list-style: none;
+    color: #224F34;
+    font-size: 20px;
+}
+.icons{
+    font-size: 28px;
+}
+.footer-foot{
+    display: flex;
+    justify-content: space-around;
+    font-size:16px ;
+    padding-bottom: 60px;
+    font-family: "Poppins", sans-serif;
+}
+.footer-left{
+    margin-left: 36px;
+}
+.footer-right span {
+    margin-right: 18px; 
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media only screen and (min-width:1903px){
+    .header-body {
+        margin: 0px 60px 0px 60px;
+    }
+    .boxes{
+        display: flex;
+        margin: 32px 0px 0px 200px;
+    }
+    .boxes img{
+        height: 420px;
+        width: 420px;
+        margin: 0px 36px 0px 36px;
+    }
+    .best-selling{
+        margin-bottom: 140px;
+    }
+    .best-selling h3{
+        line-height: 40px;
+        font-size: 22px;
+        font-family: "Roboto Slab", serif;
+        color: #224F34;
+    }
+    .boxes h4{
+        margin-left: -8px;
+        font-size: 26px;
+    }
+    .details-first{
+        display: flex;
+        margin-left: 170px;
+        gap: 10px;
+        font-size: 22px;
+    }
+    .details-second{
+        display: flex;
+        margin-left: 180px;
+        gap: 10px;
+        margin-bottom: 70px;
+        font-size: 22px;
+    }
+    .details-third{
+        display: flex;
+        margin-left: 190px;
+        gap: 10px;
+        font-size: 22px;
+    }
+    .images{
+        justify-content: center;
+        margin-left: 32px;
+    }
+    .images img{
+        height: 350px;
+        width: 350px;
+    }
+    .offers{
+        display: flex;
+        margin-top: 120px;
+        margin-left: 249px;
+        width: 70%;
+        padding: 40px;
+        padding-top: 80px;
+        background-color:#C2EFD4 ;
+        justify-content: space-around;
+    }
+   
+    .offers .girl{
+        margin: 0px -200px 0px -250px;
+        height: 690px;
+        width: 690px;
+    }
+    .flex-item img{
+        border: 2px solid white;
+        background-color: #F3E1F3;
+    }
+    .all-box{
+        display: flex;
+        margin-left: 240px;
+        margin-top: 20px;
+        
+    }
+    .box {
+        width: 400px;
+        height: 240px;
+        border: 1px solid white;
+        padding: 20px;
+        margin: 18px; 
+        background-color: #F8EEEE;
+      }
+      .footer-container{
+        display: flex;
+        gap: 46px;
+        margin: 100px 0px 0px 60px;
+        padding: 60px;
+    }
+    .footer-content h3{
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family: "Roboto Slab", serif;
+      
+    }
+    .content-in a{
+        text-decoration: none;
+        color: #224F34;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+    }
+    .footer-foot{
+        display: flex;
+        justify-content: space-around;
+        font-size:18px ;
+        padding-bottom: 60px;
+        font-family: "Poppins", sans-serif;
+    }
+    .footer-left{
+        margin-left: 22px;
+    }
+    .footer-right span {
+        margin-right: 10px; 
+        font-weight: bold;
+    }
+}
+
+/* Responsive Design for phone */
+@media only screen and (max-width:600px){
+    header{
+        background-color: #C2EFD4;
+        padding-bottom: 60px;
+        width: 80%;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        justify-content: space-around;
+    }
+    .bar-icon{
+        display: block;
+        margin-left: -80px;
+    }
+    .fashion_icon{
+        display: none;
+    }
+    
+     .mid-navbar ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #C2EFD4;
+        height: 63vh;
+        width: 47vh;
+        display: block;
+        text-align: center;
+    }
+    .right-navbar{
+        display: flex;
+        margin-right: -110px;
+    }
+    .right-navbar .fa-solid {
+        margin:20px -6px 0px 0px;
+    }
+    .header-body h2{
+        width: 60%;
+        font-family: "Rufina", serif;
+        font-size: 60px;
+        margin: 30px 60px;
+        color: #224F34;
+        
+    }
+    .header-body img{
+        display: none;
+    }
+    .header-body h3{
+        width: 60%;
+        font-family: "Rufina", serif;
+        font-size: 18px;
+        margin: 30px 60px;
+        color: #224F34;
+        font-weight: lighter;
+        
+    }
+    main{
+        width: 80%;
+    } 
+}
