@@ -173,6 +173,10 @@ header {
   background-color: #f6c9cc;
   border-radius: 6px;
 }
+.detailed::before{
+  content: "|";
+}
+
 .more-btn{
  margin: 0px auto;
 }
