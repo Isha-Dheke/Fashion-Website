@@ -7,6 +7,11 @@
 header {
     background-color: #c2efd4;
 }
+.container--full{
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .topbar {
   width: 100%;
   margin: 0px auto;
@@ -16,7 +21,7 @@ header {
 .nav{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .bar-icon {
   font-size: 20px;
@@ -52,6 +57,7 @@ header {
 }
 .right-topbar .fa-solid {
   margin: 20px 10px 0px 0px;
+  color: #224f34;
 }
 .login-bar {
   margin: 12px 0px 0px 22px;
@@ -61,26 +67,28 @@ header {
   border: solid black 2px;
   padding: 6px 16px;
   border-radius: 3px;
-  color: #224f34;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 .login-bar:hover {
-  background-color: #224f34;
-}
-.login-bar a {
-  text-decoration: none;
-}
-.login-bar a:hover {
+  background: #224f34;
   color: white;
 }
+.login-bar a {
+  text-decoration: none; 
+  color: inherit; 
+}
+.login-bar a:hover {
+  color: white
+}
+
 .header-content {
-  width: 100%;
-  margin: 0px auto;
-  max-width: 1900px;
-  justify-content: center;
+ padding: 80px 30px;
 }
 .header-body{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header-left {
   max-width: 600px;
@@ -100,11 +108,11 @@ header {
 }
 .primary-btn{
   border: 2px solid none;
-  width: 168px;
+  width: 153px;
   padding: 10px 15px;
   background-color: #224f34;
   cursor: pointer;
- 
+  text-align: center;
 }
 .primary-btn a{
   text-decoration: none;
@@ -147,17 +155,12 @@ header {
   color: #224f34;
   font-weight: lighter;
 }
-.box-content {
-  width: 100%;
-  margin: 0px auto;
-  max-width: 1900px;
-  justify-content: center;
-}
+
 .boxes {
     display: flex; 
     flex-wrap: wrap;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 .box-1 img {
@@ -184,7 +187,7 @@ header {
   left:2px;
 }
 
-.more-btn{
+.more-btn-property{
  margin: 0px auto;
  
 }
@@ -208,22 +211,16 @@ header {
  
   
 }
-.categories .ref {
+.categories .active {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
-.image-content{
-  width: 100%;
-  margin: 0px auto;
-  max-width: 1900px;
-  justify-content: center;
-}
+
 .images{
   display: flex;
   flex-wrap: wrap;
  justify-content: center;
   text-align: center;
-  width: 90%;
   margin: 0px auto;
   row-gap: 30px;
 }
@@ -237,21 +234,15 @@ header {
   background-color: #ddd9dd;
   border-radius: 8px;
 }
-.best-detailed {
+.item-details {
   text-align: center;
   font-size: 16px;
 }
-.best-details {
+.item{
   margin-top: 8px;
   font-weight: light;
   letter-spacing: 1px;
 }
-.offer-content {
-    width: 100%;
-    margin: 0px auto;
-    max-width: 1900px;
-    justify-content: center;
-  }
 .offer-part{
     padding-top: 60px;    
   }
@@ -260,10 +251,11 @@ header {
     background-color: #c2efd4;
     justify-content: center;
     margin: 0px auto;
-    width: 78%;
-    gap: 60px;
+    gap: 50px;
     height: 420px;
-    padding: 10px;
+    padding: 6px 0px;
+    width: 80%;
+    
 }
   .dot   {
     height: 60px;
@@ -311,7 +303,7 @@ header {
 .number .num-content {
   font-size: 12px;
 }
-.shop{
+.shop-btn{
   margin-top: 30px;
 }
 .feedback-corner {
@@ -340,6 +332,11 @@ header {
     2px 2px 0px 0px rgb(137, 135, 135);
     
 }
+ .double-inverted {
+  font-size: 40px;
+ position: relative;
+ right: 160px;
+}
 .box h4 {
   font-size: 30px;
 }
@@ -348,24 +345,18 @@ header {
   font-family: "Poppins", sans-serif;
   
 }
-.double-inverted {
-  text-align: left;
-}
+
 footer {
   background-color: #c2efd4;
   margin-top: 40px;
   padding: 20px;
 }
-.footercontainer-content{
-  width: 100%;
-    margin: 0px auto;
-    max-width: 1900px;
-    justify-content: center;
-}
+
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  
 }
 
 .footer-content h3 {
@@ -386,9 +377,12 @@ footer {
 .icons {
   font-size: 28px;
 }
+.icons a{
+  color: #224f34;
+}
 .footer-foot {
   display: flex;
- justify-content: space-around;
+ justify-content: space-between;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin: 20px;
@@ -396,6 +390,10 @@ footer {
 .footer-right{
   display: flex;
  gap: 20px;
+}
+.footer-right a{
+  text-decoration: none;
+  color: black;
 }
 .footer-right .fa-circle{
   font-size: 8px;
@@ -408,67 +406,26 @@ footer {
     width: 74%;
   }
   .box{
-    width: 456px;
+    width: 464px;
   }
 } 
 
 /* Responsive Design for phone */
-/* @media only screen and (max-width: 600px) {
-  header {
-    background-color: #c2efd4;
-    padding-bottom: 60px;
-    width: 80%;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-    justify-content: space-around;
+@media only screen and (max-width: 600px) {
+  header{
+    width: 600px;
   }
   .bar-icon {
+    font-size: 20px;
+    cursor: pointer;
     display: block;
-    margin-left: -80px;
   }
-  .fashion_icon {
+  .fashion_icon img {
+    height: 40px;
+    width: 40px;
     display: none;
   }
-
-  .mid-navbar ul {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background-color: #c2efd4;
-    height: 63vh;
-    width: 47vh;
-    display: block;
-    text-align: center;
-  }
-  .right-navbar {
-    display: flex;
-    margin-right: -110px;
-  }
-  .right-navbar .fa-solid {
-    margin: 20px -6px 0px 0px;
-  }
-  .header-body h2 {
-    width: 60%;
-    font-family: "Rufina", serif;
-    font-size: 60px;
-    margin: 30px 60px;
-    color: #224f34;
-  }
-  .header-body img {
+  .mid-topbar{
     display: none;
   }
-  .header-body h3 {
-    width: 60%;
-    font-family: "Rufina", serif;
-    font-size: 18px;
-    margin: 30px 60px;
-    color: #224f34;
-    font-weight: lighter;
-  }
-  main {
-    width: 80%;
-  }
-} */
+}
