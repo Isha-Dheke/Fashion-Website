@@ -4,7 +4,7 @@
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
 }
-header {
+header{
     background-color: #c2efd4;
 }
 .container--full{
@@ -12,27 +12,27 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
-.topbar {
+.header__bar-top {
   width: 100%;
   margin: 0px auto;
   max-width: 1900px;
   justify-content: center;
 }
-.nav{
+.header__bar{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.bar-icon {
+.header__bar-icon {
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
-.fashion_icon img {
+.header__fashion-icon img {
   height: 40px;
   width: 40px;
 }
-.mid-topbar a {
+.header__bar-mid a {
   text-decoration: none;
   color: #224f34;
   text-align: center;
@@ -41,25 +41,25 @@ header {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 10px;
 }
-.mid-topbar ul {
+.header__bar-mid ul {
   display: flex;
 }
-.mid-topbar li {
+.header__bar-mid li {
   list-style: none;
   display: inline-block;
 }
-.mid-topbar li a:hover {
+.header__bar-mid li a:hover {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
-.right-topbar {
+.header__bar-right {
   display: flex;
 }
-.right-topbar .fa-solid {
+.header__bar-right .fa-solid {
   margin: 20px 10px 0px 0px;
   color: #224f34;
 }
-.login-bar {
+.header__login {
   margin: 12px 0px 0px 22px;
   font-weight: 600;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -71,63 +71,64 @@ header {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.login-bar:hover {
+.header__login:hover {
   background: #224f34;
   color: white;
 }
-.login-bar a {
+.header__login a {
   text-decoration: none; 
   color: inherit; 
 }
-.login-bar a:hover {
+.header__login a:hover {
   color: white
 }
 
-.header-content {
- padding: 80px 30px;
+.header__content {
+ padding: 50px 30px;
 }
-.header-body{
+.header__body{
   display: flex;
   justify-content: space-between;
 }
-.header-left {
+.header__body-left {
   max-width: 600px;
   height: 500px;
 }
-.header-body h2 {
+.header__body h2 {
   font-family: "Rufina", serif;
   font-size: 86px;
   color: #224f34;
 }
-.header-body h3 {
+.header__body h3 {
   font-family: "Rufina", serif;
   font-size: 22px;
   color: #224f34;
   font-weight: lighter;
   line-height: 40px;
 }
-.primary-btn{
+.button-primary{
   border: 2px solid none;
   width: 153px;
   padding: 10px 15px;
   background-color: #224f34;
   cursor: pointer;
   text-align: center;
+  
 }
-.primary-btn a{
+.button-primary a{
   text-decoration: none;
   font-size: 18px;
   color: white;
   font-family: "Poppins", sans-serif;
  
 }
-.primary-btn:hover {
+.button-primary:hover {
   background-color: rgb(62, 131, 62);
 } 
-.header-right{
+.header-image{
   max-width: 400px;
 }
-.header-right img {
+.header-image img {
   height: 86%;
   width: 98%;
   margin-top: 20px;
@@ -142,7 +143,7 @@ header {
 .best-selling{
     padding-top: 60px;
 }
-.bestselling-content {
+.bestselling__container {
   text-align: center;
 }
 .best-selling h2 {
@@ -156,7 +157,7 @@ header {
   font-weight: lighter;
 }
 
-.boxes {
+.bestselling__product {
     display: flex; 
     flex-wrap: wrap;
     text-align: center;
@@ -178,16 +179,16 @@ header {
   background-color: #f6c9cc;
   border-radius: 6px;
 }
-.detailed{
+.bestselling__product-price{
   letter-spacing: 3px;
 }
-.detailed::after{
+.bestselling__product-price::after{
   content: "|";
   position: relative;
   left:2px;
 }
 
-.more-btn-property{
+.button-seemore{
  margin: 0px auto;
  
 }
@@ -201,12 +202,12 @@ header {
   color: #224f34;
   line-height: 90px;
 }
-.list{
+.categories__list{
     line-height: 70px;
 }
-.list a {
+.categories__list a {
   text-decoration: none;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 40px;
   color: black;
  
   
@@ -216,115 +217,103 @@ header {
   text-underline-offset: 8px;
 }
 
-.images{
+.categories__product{
   display: flex;
   flex-wrap: wrap;
- justify-content: center;
+ justify-content: space-between;
   text-align: center;
   margin: 0px auto;
   row-gap: 30px;
 }
-.flex-item{
+.categories__detail{
   flex-basis: 22%;
 }
-.flex-item img {
+.categories__detail img {
   border: 2px solid white;
   height: 280px;
   width: 280px;
   background-color: #ddd9dd;
   border-radius: 8px;
 }
-.item-details {
-  text-align: center;
-  font-size: 16px;
-}
-.item{
-  margin-top: 8px;
-  font-weight: light;
-  letter-spacing: 1px;
-}
-.offer-part{
-    padding-top: 60px;    
+
+.exclusive-offer{
+    padding-top: 60px;   
   }
-.offers {
+.offer__content {
     display: flex;
+    flex-wrap: wrap;
     background-color: #c2efd4;
     justify-content: center;
     margin: 0px auto;
     gap: 50px;
-    height: 420px;
-    padding: 6px 0px;
-    width: 80%;
-    
+    padding: 30px;
 }
   .dot   {
     height: 60px;
     width: 60px;
   }
-  .dot-bottom{
+  .offer__dot-bottom{
     position: relative;
     top: 310px;
   }
-  .dot-top{
+  .offer__dot-top{
     position: relative;
     top: 14px;
   }
-  .offer-detail{
+  .offer__Detail{
     width: 30%;
   }
-.offer-detail h2{
+.offer__Detail h2{
   color: #224f34;
   font-family: "Poppins", sans-serif;
   font-size: 42px;
 }
-.offer-detail p {
+.offer__Detail p {
   font-size: 20px;
   font-weight: bold;
   line-height: 32px;
 }
 
-.number-wrapper {
+.offer__number-wrapper {
   display: flex;
   gap: 30px;
   padding-top: 10px;
 }
-.number {
+.offer__number {
   border: 2px solid white;
   width: 78px;
   padding: 12px;
   background-color: #fbf7f7;
   box-shadow: 8px 8px 0px 0px black, 0.2px 0.2px 0px 0px black;
 }
-.number .num {
+.offer__number .offer__number-digit {
   font-size: 36px;
   display: inline;
   justify-content: center;
 }
-.number .num-content {
-  font-size: 12px;
+ .offer__number-fixed {
+  font-size: 8px;
 }
-.shop-btn{
+.button-shop{
   margin-top: 30px;
 }
 .feedback-corner {
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 0px 50px 0px;
 }
 .feedback-corner h2 {
   font-size: 48px;
   color: #224f34;
   line-height: 100px;
 }
-.all-box {
+.feedback__card {
   display: grid;
   grid-auto-flow: dense;
   justify-content: center;
   gap: 10px;
   grid-template-columns: auto auto auto;
 }
-.box {
-  width: 380px;
-  height: 250px;
+.feedback__box {
   border: 1px solid white;
   padding: 20px;
   background-color: #f8eeee;
@@ -332,15 +321,15 @@ header {
     2px 2px 0px 0px rgb(137, 135, 135);
     
 }
- .double-inverted {
+ .feedback__double-inverted {
   font-size: 40px;
  position: relative;
  right: 160px;
 }
-.box h4 {
+.feedback__box h4 {
   font-size: 30px;
 }
-.box p {
+.feedback__box p {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   
@@ -348,36 +337,34 @@ header {
 
 footer {
   background-color: #c2efd4;
-  margin-top: 40px;
+  margin-top: 60px;
   padding: 20px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  
 }
 
-.footer-content h3 {
+.footer__details h3 {
   font-size: 20px;
 }
-.content-in a {
+.footer__details a {
   text-decoration: none;
   color: #224f34;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
-.content-in ul {
+.footer__details ul {
   text-decoration: none;
   list-style: none;
   color: #224f34;
   font-size: 20px;
 }
-.icons {
+.footer__icons {
   font-size: 28px;
 }
-.icons a{
+.footer__icons a{
   color: #224f34;
 }
 .footer-foot {
@@ -385,7 +372,7 @@ footer {
  justify-content: space-between;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  margin: 20px;
+  margin: 20px 0px;
 }
 .footer-right{
   display: flex;
@@ -398,16 +385,6 @@ footer {
 .footer-right .fa-circle{
   font-size: 8px;
   padding: 2px
-}
-
- /* Responsive Design  */
-  @media only screen and (min-width: 1903px) {
-  .offers{
-    width: 74%;
-  }
-  .box{
-    width: 464px;
-  }
 } 
 
 /* Responsive Design for phone */
@@ -415,17 +392,71 @@ footer {
   header{
     width: 600px;
   }
-  .bar-icon {
+  .header__bar-icon {
     font-size: 20px;
     cursor: pointer;
     display: block;
   }
-  .fashion_icon img {
+  .header__fashion-icon img {
     height: 40px;
     width: 40px;
     display: none;
   }
-  .mid-topbar{
+  .header__bar-mid{
     display: none;
   }
+  .header-image{
+    display: none;
+  }
+  .header__body h2 {
+    font-family: "Rufina", serif;
+    font-size: 80px;
+    color: #224f34;
+  }
+  .button-primary{
+    margin-top: 30px;
+  }
+  .best-selling h3 {
+    font-size:18px;
+    color: #224f34;
+    font-weight: bold;
+  }
+  
+  .bestselling__product {
+      justify-content: center;
+      row-gap: 10px;
+  }
+  .categories__list a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: black;
+  }
+
+  .offer__content {
+    display: inline-block;
+}
+.offer__dot-bottom{
+  position: relative;
+  top: 0px;
+  bottom: 360px;
+}
+.offer__Detail h2{
+  font-size: 42px;
+  margin-top: 40px;
+}
+.feedback__card{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 40px;
+  
+}
+.footer-foot{
+  display: block;
+  line-height: 30px;
+}
 }
