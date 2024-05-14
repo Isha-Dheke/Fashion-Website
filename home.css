@@ -4,6 +4,17 @@
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
 }
+h2{
+  font-size: 48px;
+  color: #224f34;
+  font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 767px){
+  h2{
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+  }
+}
 header{
     background-color: #c2efd4;
 }
@@ -88,6 +99,8 @@ header{
 }
 .header__body{
   display: flex;
+  flex-wrap: wrap-reverse;
+
   justify-content: space-between;
 }
 .header__body-left {
@@ -113,7 +126,7 @@ header{
   background-color: #224f34;
   cursor: pointer;
   text-align: center;
-  
+  margin-top: 20px;
 }
 .button-primary a{
   text-decoration: none;
@@ -146,15 +159,12 @@ header{
 .bestselling__container {
   text-align: center;
 }
-.best-selling h2 {
-  font-size: 48px;
-  color: #224f34;
-}
 .best-selling h3 {
-  line-height: 70px;
+  line-height: 20px;
   font-size:26px;
   color: #224f34;
   font-weight: lighter;
+  padding-bottom: 30px;
 }
 
 .bestselling__product {
@@ -163,6 +173,27 @@ header{
     text-align: center;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+.bestselling__product h4{
+  font-size: 1.17em;
+  margin-top: 16px;
+}
+.bestselling__product .box{
+  width:calc(33% - 20px);
+}
+@media only screen and (max-width: 600px){
+  .bestselling__product .box{
+    width:calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 480px){
+  .bestselling__product .box{
+    width:100%;
+  }
+}
+.bestselling__product .box img{
+  width:100%;
+  display: block;
 }
 .box-1 img {
   border: 2px solid white;
@@ -179,6 +210,11 @@ header{
   background-color: #f6c9cc;
   border-radius: 6px;
 }
+@media only screen and (max-width: 480px){
+ .box{
+  margin-bottom: 20px;
+ }
+}
 .bestselling__product-price{
   letter-spacing: 3px;
 }
@@ -187,10 +223,13 @@ header{
   position: relative;
   left:2px;
 }
+.bestselling__product-rate::after{
+  font-family: 'Font Awesome';
+  content: '\f005'; 
+}
 
 .button-seemore{
- margin: 0px auto;
- 
+ margin: 30px auto;
 }
 .categories {
   text-align: center;
@@ -198,8 +237,6 @@ header{
 }
 
 .categories h2 {
-  font-size: 48px;
-  color: #224f34;
   line-height: 90px;
 }
 .categories__list{
@@ -225,9 +262,7 @@ header{
   margin: 0px auto;
   row-gap: 30px;
 }
-.categories__detail{
-  flex-basis: 22%;
-}
+
 .categories__detail img {
   border: 2px solid white;
   height: 280px;
@@ -235,7 +270,15 @@ header{
   background-color: #ddd9dd;
   border-radius: 8px;
 }
-
+@media only screen and (max-width: 585px){
+  .categories__detail {
+    width:100%;
+  }
+  .categories__detail img{
+    width:100%;
+    object-fit: contain;
+  }
+}
 .exclusive-offer{
     padding-top: 60px;   
   }
@@ -243,31 +286,33 @@ header{
     display: flex;
     flex-wrap: wrap;
     background-color: #c2efd4;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0px auto;
-    gap: 50px;
+    
     padding: 30px;
 }
-  .dot   {
+.offer__image-part{
+  position: relative;
+  top: 20px;
+}
+  .dot{
     height: 60px;
     width: 60px;
   }
-  .offer__dot-bottom{
-    position: relative;
-    top: 310px;
-  }
+ 
   .offer__dot-top{
-    position: relative;
-    top: 14px;
+    position: absolute;
+    left: 390px;
+  } 
+  @media only screen and (max-width: 520px){
+    .dot{
+      display: none;
+    }
   }
   .offer__Detail{
     width: 30%;
   }
-.offer__Detail h2{
-  color: #224f34;
-  font-family: "Poppins", sans-serif;
-  font-size: 42px;
-}
+
 .offer__Detail p {
   font-size: 20px;
   font-weight: bold;
@@ -302,8 +347,6 @@ header{
   padding: 60px 0px 50px 0px;
 }
 .feedback-corner h2 {
-  font-size: 48px;
-  color: #224f34;
   line-height: 100px;
 }
 .feedback__card {
@@ -323,8 +366,8 @@ header{
 }
  .feedback__double-inverted {
   font-size: 40px;
- position: relative;
- right: 160px;
+  display: block;
+  text-align: start;
 }
 .feedback__box h4 {
   font-size: 30px;
@@ -388,60 +431,86 @@ footer {
 } 
 
 /* Responsive Design for phone */
-@media only screen and (max-width: 600px) {
-  header{
-    width: 600px;
-  }
+@media only screen and (max-width: 767px) {
   .header__bar-icon {
     font-size: 20px;
     cursor: pointer;
     display: block;
   }
   .header__fashion-icon img {
-    height: 40px;
-    width: 40px;
     display: none;
   }
-  .header__bar-mid{
+ 
+  .header__bar-mid ul {
     display: none;
   }
-  .header-image{
-    display: none;
+  .header__bar-mid li {
+   padding: 25px;
+   font-size: 20px;
+   text-align: center;
+}
+  .header__bar-mid ul.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color:  #c2efd4;
+    margin: 30px 0;
+  }
+  .header__body-left{
+   text-align: center
   }
   .header__body h2 {
     font-family: "Rufina", serif;
-    font-size: 80px;
+    /* font-size: 72px; */
+    font-size: calc(100vw * 0.09387);
     color: #224f34;
+    
   }
   .button-primary{
-    margin-top: 30px;
+    margin: 30px auto;
   }
   .best-selling h3 {
-    font-size:18px;
+    /* font-size:12px; */
+    font-size: calc(100vw * 0.0289);
     color: #224f34;
     font-weight: bold;
   }
-  
-  .bestselling__product {
-      justify-content: center;
-      row-gap: 10px;
+  .categories__list{
+    line-height: 50px;
   }
   .categories__list a {
     text-decoration: none;
-    padding: 0px 20px;
+    padding: 0px 10px;
     color: black;
   }
-
   .offer__content {
-    display: inline-block;
+    display: block;
+    justify-content: center;
 }
-.offer__dot-bottom{
-  position: relative;
-  top: 0px;
-  bottom: 360px;
+
+.button-shop{
+  margin: 30px auto;
 }
+.offer__image-part{
+  text-align: center;
+}
+.dot{
+  display: block;
+}
+.offer__dot-top{
+
+}
+.offer__Detail{
+  width: 100%;
+  text-align: center;
+}
+.offer__number-wrapper{
+  justify-content: center;
+}
+
 .offer__Detail h2{
-  font-size: 42px;
   margin-top: 40px;
 }
 .feedback__card{
@@ -459,4 +528,33 @@ footer {
   display: block;
   line-height: 30px;
 }
+}
+@media only screen and (max-width: 991px) and (min-width:768px){
+  .header__body{
+    justify-content: center;
+  }
+  .offer__image-part{
+    width:50% ;
+  }
+  .offer__Detail{
+    width: 50%;
+  }
+  .offer__dot-top{
+    position: absolute;
+    bottom: 25px;
+    left: 230px;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width:992px){
+  .header__body{
+    justify-content: center;
+  }
+  .categories__product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+  .categories__detail img{
+    width: calc(25% - -190px);
+  }
 }
