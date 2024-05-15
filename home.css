@@ -17,6 +17,7 @@ h2{
 }
 header{
     background-color: #c2efd4;
+    padding: 16px;
 }
 .container--full{
   padding: 0 15px;
@@ -67,11 +68,10 @@ header{
   display: flex;
 }
 .header__bar-right .fa-solid {
-  margin: 20px 10px 0px 0px;
   color: #224f34;
+  margin: 8px 30px 0px 0px;
 }
 .header__login {
-  margin: 12px 0px 0px 22px;
   font-weight: 600;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -288,26 +288,24 @@ header{
     background-color: #c2efd4;
     justify-content: space-around;
     margin: 0px auto;
-    
     padding: 30px;
 }
 .offer__image-part{
   position: relative;
-  top: 20px;
+  width: 40%;
 }
-  .dot{
+.dot img{
     height: 60px;
     width: 60px;
   }
- 
-  .offer__dot-top{
-    position: absolute;
-    left: 390px;
-  } 
+  
+ .offer__dot-bottom{
+  position: absolute;
+  left: inherit;
+  right: 110px;
+ }
   @media only screen and (max-width: 520px){
-    .dot{
-      display: none;
-    }
+    
   }
   .offer__Detail{
     width: 30%;
@@ -444,16 +442,19 @@ footer {
   .header__bar-mid ul {
     display: none;
   }
+  .header__bar-mid{
+    transition: all;
+  }
   .header__bar-mid li {
-   padding: 25px;
+   padding: 21px;
    font-size: 20px;
-   text-align: center;
+   text-align: start;
 }
   .header__bar-mid ul.active{
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 100%;
+    width: 90%;
     left: 0;
     background-color:  #c2efd4;
     margin: 30px 0;
@@ -485,26 +486,17 @@ footer {
     padding: 0px 10px;
     color: black;
   }
-  .offer__content {
-    display: block;
-    justify-content: center;
-}
 
 .button-shop{
   margin: 30px auto;
 }
 .offer__image-part{
-  text-align: center;
-}
-.dot{
-  display: block;
-}
-.offer__dot-top{
-
+  margin-bottom: 30px;
 }
 .offer__Detail{
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
 .offer__number-wrapper{
   justify-content: center;
@@ -533,19 +525,9 @@ footer {
   .header__body{
     justify-content: center;
   }
-  .offer__image-part{
-    width:50% ;
-  }
-  .offer__Detail{
-    width: 50%;
-  }
-  .offer__dot-top{
-    position: absolute;
-    bottom: 25px;
-    left: 230px;
-  }
+  
 }
-@media only screen and (max-width: 1024px) and (min-width:992px){
+@media only screen and (max-width: 1024px) and (min-width:911px){
   .header__body{
     justify-content: center;
   }
