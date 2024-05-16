@@ -64,9 +64,24 @@ header{
   text-decoration: underline;
   text-underline-offset: 8px;
 }
-.header__bar-right {
-  display: flex;
+.dropdown__content {
+  display: none;
+  position: absolute;
 }
+.dropdown__content a {
+ display: block;
+ text-align: start;
+ padding: 12px;
+}
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+  
+ .owl-nav{
+  font-size: 60px;
+  text-align: center;
+ }
+
 .header__bar-right .fa-solid {
   color: #224f34;
   margin: 8px 30px 0px 0px;
@@ -95,7 +110,7 @@ header{
 }
 
 .header__content {
- padding: 50px 30px;
+ padding: 30px 30px 0px 30px;
 }
 .header__body{
   display: flex;
@@ -225,7 +240,7 @@ header{
 }
 .bestselling__product-rate::after{
   font-family: 'Font Awesome';
-  content: '\f005'; 
+  content: '★'; 
 }
 
 .button-seemore{
@@ -241,19 +256,20 @@ header{
 }
 .categories__list{
     line-height: 70px;
+    
 }
-.categories__list a {
-  text-decoration: none;
-  padding: 0px 40px;
-  color: black;
- 
-  
+.categories__list button{
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  padding: 40px;
 }
-.categories .active {
+.categories__list button:hover{
   text-decoration: underline;
+  line-height: 10px;
   text-underline-offset: 8px;
+  cursor: pointer;
 }
-
 .categories__product{
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +277,7 @@ header{
   text-align: center;
   margin: 0px auto;
   row-gap: 30px;
+  display: none;
 }
 
 .categories__detail img {
@@ -290,9 +307,9 @@ header{
     margin: 0px auto;
     padding: 30px;
 }
-.offer__image-part{
+.offer__image{
   position: relative;
-  width: 40%;
+  
 }
 .dot img{
     height: 60px;
@@ -301,12 +318,10 @@ header{
   
  .offer__dot-bottom{
   position: absolute;
-  left: inherit;
-  right: 110px;
+  right: 4px;
+  
  }
-  @media only screen and (max-width: 520px){
-    
-  }
+ 
   .offer__Detail{
     width: 30%;
   }
@@ -430,7 +445,7 @@ footer {
 
 /* Responsive Design for phone */
 @media only screen and (max-width: 767px) {
-  .header__bar-icon {
+  .header__bar-icon{
     font-size: 20px;
     cursor: pointer;
     display: block;
@@ -442,9 +457,7 @@ footer {
   .header__bar-mid ul {
     display: none;
   }
-  .header__bar-mid{
-    transition: all;
-  }
+  
   .header__bar-mid li {
    padding: 21px;
    font-size: 20px;
@@ -458,6 +471,7 @@ footer {
     left: 0;
     background-color:  #c2efd4;
     margin: 30px 0;
+    
   }
   .header__body-left{
    text-align: center
@@ -478,15 +492,16 @@ footer {
     color: #224f34;
     font-weight: bold;
   }
-  .categories__list{
-    line-height: 50px;
-  }
-  .categories__list a {
-    text-decoration: none;
-    padding: 0px 10px;
-    color: black;
+ 
+  .categories__list button{
+    margin: 2px;
+    line-height: 2px;
   }
 
+  .categories__list .tab_button.active{
+   text-decoration: underline;
+   text-underline-offset: 8px;
+  }
 .button-shop{
   margin: 30px auto;
 }
@@ -525,7 +540,9 @@ footer {
   .header__body{
     justify-content: center;
   }
-  
+  .categories__product{
+    justify-content: space-around;
+  }
 }
 @media only screen and (max-width: 1024px) and (min-width:911px){
   .header__body{
